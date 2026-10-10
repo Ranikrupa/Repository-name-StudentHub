@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>StudentHub</title>
+    <link rel="stylesheet" href="style7.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>StudentHub</h1>
+        <p>Smart Student Assistant</p>
+    </header>
+    <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    <nav>
+    <a href="#home">Home</a>
+    <a href="#tasks">Tasks</a>
+    <a href="#notes">Notes</a>
+    <a href="#attendance">Attendance</a>
+    <a href="#profile">Profile</a>
+    <a href="#events">Events</a>
+</nav>
+
+    <!-- Main Content -->
+    <main id="Home">
+        <section id="profile">
+    <section id="profile">
+
+    <h2>Student Profile</h2>
+
+    <img id="profileImage"
+         src="https://via.placeholder.com/120"
+         alt="Profile Picture">
+
+    <br><br>
+
+    <input type="file"
+           id="imageInput"
+           accept="image/*"
+           onchange="changeProfileImage()">
+
+    <br><br>
+
+    <input type="text" id="studentName" placeholder="Enter your name">
+
+    <input type="text" id="studentCourse" placeholder="Enter your course">
+
+    <input type="text" id="studentSemester" placeholder="Enter your semester">
+
+
+    <br>
+
+    <button onclick="updateProfile()">Update Profile</button>
+
+    <div id="profileDetails">
+
+        <p><strong>Name:</strong> Rani</p>
+
+        <p><strong>Course:</strong> Computer Science Engineering</p>
+
+        <p><strong>Semester:</strong> 1st Semester</p>
+
+    </div>
+
+</section>
+<div class="event-form">
+
+    <input type="text" id="eventName" placeholder="Event name">
+
+    <input type="date" id="eventDate">
+
+    <button onclick="addEvent()">Add Event</button>
+
+</div>
+<section id="events">
+
+    <h2>College Events 📅</h2>
+
+    <div class="event">
+
+        <h3>Hackathon 2026</h3>
+
+        <p>Date: 15 October 2026</p>
+
+        <p>Time: 10:00 AM</p>
+
+    </div>
+
+    <div class="event">
+
+        <h3>Technical Workshop</h3>
+
+        <p>Date: 20 October 2026</p>
+
+        <p>Time: 2:00 PM</p>
+
+    </div>
+
+</section>
+
+        <h2>Welcome, Student 👋</h2>
+
+        <p class="intro">
+            Manage your tasks, notes and attendance in one place.
+        </p>
+        <button onclick="showMessage()">Get Started</button>
+        <button onclick="addTask()">Add Task</button>
+        <div id="tasks">
+        <input type="text" id="taskSearch" placeholder="Search tasks" onkeyup="searchTasks()">
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+        </div>
+        <div id="notes">
+
+        <input type="text" id="noteSearch"
+           placeholder="Search notes"
+           onkeyup="searchNotes()">
+
+         <input type="text" id="noteInput" placeholder="Enter a note">
+
+        <button onclick="addNote()">Add Note</button>
+
+        <ul id="noteList"></ul>
+
+        </div>
+        <div id="attendance">
+        <input type="number" id="attendedClasses" placeholder="Classes attended">
+
+        <input type="number" id="totalClasses" placeholder="Total classes">
+
+        <button onclick="updateAttendance()">Calculate Attendance</button>
+        </div>
+
+        <!-- Dashboard Cards -->
+        <div class="dashboard">
+
+            <div class="card">
+                <h3>Tasks</h3>
+                <p class="number" id="taskNumber">3</p>
+                <p>Pending Tasks</p>
+            </div>
+
+            <div class="card">
+                <h3>Notes</h3>
+                <p class="number" id="noteNumber">5</p>
+                <p>Total Notes</p>
+            </div>
+
+            <div class="card">
+                <h3>Attendance</h3>
+                <p class="number" id="attendanceNumber">85%</p>
+                <p>Overall Attendance</p>
+            </div>
+            <div class="card">
+            <h3>Completed</h3>
+            <p class="number" id="completedNumber">0</p>
+            <p>Completed Tasks</p>
+           </div>
+           <div id="taskProgress">
+
+    <h2>Task Progress 📊</h2>
+
+    <div class="progress-container">
+        <div id="progressBar"></div>
+    </div>
+
+    <p id="progressText">0% completed</p>
+
+</div>
+
+        </div>
+
+    </main>
+
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="form.php" method="POST">
+       <lable for="username">username</lable>
+       <input type="text" id="username"   minlength="6" maxlength="10" required>
+       <br>
+       <lable for="password">password</lable>
+       <input type="text" id="password" minlength="6" maxlength="10" required>
+       <br>
+       <lable for="email">email</lable>
+       <input type="text" id="email"  required>
+       <br>
+       <lable for="email">phone</lable>
+       <input type="text" id="phone"   required>
+        <br>
+       <lable for="bday">birthdate</lable>
+       <input type="date" id="bday"pattern="[0-9]{3}-[0-9][3]-[0-9][4]""> 
+       <br>
+       <lable for="quantity">quantity</lable>
+        <input type="quantity" id="quantity" required > 
+        <br>
+    
+        
+       <lable for="title">Miss</lable>
+        <input type="radio" id="miss" value="Miss" name="title">
+        <lable for="title">Mrs</lable>
+        <input type="radio" id="Mrs" value="Mrs" name="title">
+        <lable for="title"> dr</lable>
+        <input type="radio" id="dr" value="Mrs" name="title">
+        <br>
+        <lable for="payment">Payment</lable>
+        <select>
+            <option type="giftcard">giftcard</option>
+            <option type="mashcard">mashcard</option>
+            
+        </select>
+        <br>
+        <lable for="subsrcibe">subscribet</lable>
+        <input type="ckeckbox" id="subsrcibe">
+        </br>
+        <lable for="comment">comment</lable>
+        <textarea id="comment" rows="3" cols="5"></textarea>
+
+
+        <br>
+       <input type="reset"> <br>
+       <input type="submit">
+        </form>
+    </body>
+</html>

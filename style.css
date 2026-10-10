@@ -1,0 +1,28 @@
+tml>
+    <head>
+        <title>document</title>
+    </head>
+    <style>
+    body{
+        background-color: black;
+
+    }
+    h1{
+        color: rgb(0, 255, 234) ;
+    }
+    #p1{
+        color:rgb(122, 102, 35);
+    }
+    #p2{
+        color: rgb(245, 220, 230) ;
+    }
+    #p3{
+        color: rgb(20, 40, 4);
+    }
+    #p4{
+        color: brown;
+    }
+
+
+
+    </style>
